@@ -15,6 +15,40 @@ npm create vite@latest
     npm install
     npm run dev
 
+-------------**** TailWind Css ****--------------------------------------
+
+https://tailwindcss.com/docs/installation/using-postcss
+
+[comandos]
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+
+[criar novo arquivo - comandos]
+Criar arquivo: postcss.config.js
+
+Comando dentro deste novo arquivo:
+export default = {  // comando desta linha foi alterado devido o formado da configuracao dos diretorios deste projeto
+   plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+   }
+}
+
+Alterar conteudo do arquivo: `tailwind.config.js`
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+   content: ["./src/**/*.{html, js}, ./*.{html, js}"],
+   theme: {
+      extend: {},
+   },
+   plugins: [],
+}
+
+Adicionar comandos no `style.css`
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+--------------------------------------------------------------
 
 **** CODIGOS ****
 Video 01 - JS2023
