@@ -77,7 +77,8 @@ const catalogo = [
 for (const produtoCatalogo of catalogo) {
 
 	// Criando o card
-	const cartaoProduto = `<div id="card-produto-1">
+	const cartaoProduto = `
+	<div class="border-solid border-2 border-sky-500" id="card-produto-${produtoCatalogo.id}">
 	<img
 		src="./assets/img/${produtoCatalogo.imagem}"
 		alt="Imagem - Produto 1"
