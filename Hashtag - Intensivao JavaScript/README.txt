@@ -49,6 +49,15 @@ Adicionar comandos no `style.css`
 @tailwind components;
 @tailwind utilities;
 --------------------------------------------------------------
+**** Icones ****
 
+Acessar site Font Awesome:
+https://fontawesome.com/
+https://cdnjs.com
+https://cdnjs.com/libraries/font-awesome
+
+
+
+--------------------------------------------------------------
 **** CODIGOS ****
 Video 01 - JS2023
