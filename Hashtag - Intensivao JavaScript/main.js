@@ -77,8 +77,21 @@ const catalogo = [
 for (const produtoCatalogo of catalogo) {
 
 	// Criando o card
-	const cartaoProduto = `
-	<div class="border-solid border-2 border-sky-500" id="card-produto-${produtoCatalogo.id}">
+	const cartaoProduto = `<div class='border-solid border-2 border-sky-500 w-48 m-2' id="card-produto-${produtoCatalogo.id}">
+<img
+  src="./assets/img/${produtoCatalogo.imagem}"
+  alt="Produto 1 do Magazine Hashtag."
+  style="height: 300px"
+/>
+<p class='marca'>${produtoCatalogo.marca}</p>
+<p>${produtoCatalogo.nome}</p>
+<p>$${produtoCatalogo.preco}</p>
+<button>Adicionar</button>
+</div>`;
+	
+	
+	
+	/* `<div class='border-solid hover:border-dotted' id="card-produto-${produtoCatalogo.id}">
 	<img
 		src="./assets/img/${produtoCatalogo.imagem}"
 		alt="Imagem - Produto 1"
@@ -88,6 +101,6 @@ for (const produtoCatalogo of catalogo) {
 	<p>${produtoCatalogo.nome}</p>
 	<p>$${produtoCatalogo.preco}</p>
 	<button>Adicionar</button>
-	</div>`;
+	</div>`; */
 	document.getElementById("container-produto").innerHTML += cartaoProduto
 }
