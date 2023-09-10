@@ -14,6 +14,31 @@ const dataBase = [
 		imagem: "assets/img/seiLa.svg",
 		nome: "De algum país ai",
 	},
+	{
+		id:4,
+		imagem: "assets/img/canada.png",
+		nome: "Canadá",
+	},
+	{
+		id:5,
+		imagem: "assets/img/argentina.png",
+		nome: "Argentina",
+	},
+	{
+		id:6,
+		imagem: "assets/img/espanha.png",
+		nome: "Argentina",
+	},
+	{
+		id: 7,
+		imagem: "assets/img/estadoDoMaranhao.png",
+		nome: "Estado do Maranhão",
+	},
+	{
+		id: 8,
+		imagem: "assets/img/portugal.png",
+		nome: "Portugal",
+	},
 ]; 
 
 
