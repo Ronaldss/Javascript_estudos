@@ -7,6 +7,8 @@
 
 // Criando cards dos produtos
 
+import { inicializarCarrinho } from "./src/menuCarrinho";
+
 const catalogo = [
 	{
 		id: 1,
@@ -104,3 +106,7 @@ for (const produtoCatalogo of catalogo) {
 	</div>`; */
 	document.getElementById("container-produto").innerHTML += cartaoProduto
 }
+
+inicializarCarrinho();
+
+

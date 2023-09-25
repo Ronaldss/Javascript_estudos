@@ -1,3 +1,6 @@
+import { inicializarCarrinho } from "./src/menuCarrinho";
+import { oi } from "./src/test"
+
 const dataBase = [
 	{
 		id: 1,
@@ -65,3 +68,6 @@ for (var i=0; i<10; i++ ) {
 	console.log(i);
 	document.getElementById("cardRd").innerHTML += ronald
 }
+
+inicializarCarrinho();	
+oi();
