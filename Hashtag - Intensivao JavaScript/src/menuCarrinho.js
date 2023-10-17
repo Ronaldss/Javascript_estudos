@@ -33,6 +33,11 @@ export function adicionarAoCarrinho(idProduto){
             <p class="texto-slate-400 text-xs">Tamanho: M</p>
             <p class="text-green-700 text-lg">$${produto.preco}</p>
         </div>
+        <div class="flex text-slate-950 items-end absolute bottom-0 right-2 text-lg">
+            <button>-</button>
+            <p class="ml-2">2</p>
+            <button class="ml-2">+</button>
+        </div>
     </article>
     `;
     containerProdutosCarrinho.innerHTML += cartaoProdutoCarrinho;
