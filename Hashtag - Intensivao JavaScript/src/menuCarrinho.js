@@ -29,11 +29,11 @@ function incrementarQuantidadeProduto(idProduto){
 
 function decrementarQuantidadeProduto(idProduto){
     idsProdutoCarrinhoComQuantidade[idProduto]--;
+    atualizarInformacaoQuantidade(idProduto);
 }
 
 function atualizarInformacaoQuantidade(idProduto) {
-    document.getElementById(`quantidade-${idProduto}`).innerText =
-     idsProdutoCarrinhoComQuantidade[idProduto];
+    document.getElementById(`quantidade-${idProduto}`).innerText = idsProdutoCarrinhoComQuantidade[idProduto];
 }
 
 export function adicionarAoCarrinho(idProduto){
@@ -56,11 +56,14 @@ export function adicionarAoCarrinho(idProduto){
             <p class="text-green-700 text-lg">$${produto.preco}</p>
         </div>
         <div class="flex text-slate-950 items-end absolute bottom-0 right-2 text-lg">
-            <button>-</button>
+            <button id="decrementar-produto-${produto.id}">-</button>
             <p id="quantidade-${produto.id}" class="ml-2">${idsProdutoCarrinhoComQuantidade[produto.id]}</p>
-            <button class="ml-2">+</button>
+            <button id="incrementar-produto-${produto.id}" class="ml-2">+</button>
         </div>
     </article>
     `;
     containerProdutosCarrinho.innerHTML += cartaoProdutoCarrinho;
+    document.getElementById(`decrementar-produto-${produto.id}`).addEventListener("click", () => decrementarQuantidadeProduto(produto.id));
+
+    document.getElementById(`incrementar-produto-${produto.id}`).addEventListener("click", () => incrementarQuantidadeProduto(produto.id));
 }
